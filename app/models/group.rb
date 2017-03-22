@@ -4,5 +4,5 @@ class Group < ApplicationRecord
   validates :title, presence: true
 
   has_many :groups_relationships
-  has_many :menbers, through: :group_relationships, source: :user
+  has_many :members, through: :group_relationships, source: :user
 end
